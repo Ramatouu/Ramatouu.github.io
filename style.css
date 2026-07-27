@@ -266,10 +266,15 @@ h2 .num{
 .section-lede{
   max-width: 60ch;
   color: #4b463c;
+  margin-bottom: var(--space-3);
+}
+.travaux-switch{
+  display: flex; gap: var(--space-2); flex-wrap: wrap;
   margin-bottom: var(--space-4);
 }
 
 .group-title{
+  scroll-margin-top: 90px;
   font-family: var(--font-mono);
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -334,6 +339,7 @@ h2 .num{
   padding: var(--space-2);
 }
 .card-thumb-logo img{ object-fit: contain; }
+.card-thumb-logo.card-thumb-dark{ background: #0A1A22; padding: var(--space-3); }
 
 /* Cards with no screenshot available: text-forward treatment, no empty box */
 .card-no-thumb{
@@ -374,6 +380,16 @@ h2 .num{
   color: var(--clay-dark);
 }
 .card p{ font-size: 0.95rem; margin: 0.3rem 0; }
+.card-contribution{
+  font-size: 0.88rem;
+  padding: 0.5rem 0.7rem;
+  background: var(--paper-2);
+  border-left: 2px solid var(--clay);
+  border-radius: 0 4px 4px 0;
+}
+.card-contribution strong{ color: var(--clay-dark); }
+.card-featured .card-contribution{ background: rgba(255,255,255,0.08); border-left-color: var(--ochre); }
+.card-featured .card-contribution strong{ color: var(--ochre); }
 .stack{
   list-style: none;
   display: flex; flex-wrap: wrap; gap: 0.4rem;
